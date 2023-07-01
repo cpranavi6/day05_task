@@ -1,0 +1,104 @@
+Day_05_task
+1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+  var person = [{"fname":"John", "lname":"Doe", "age":25} , {"fname":"Joseph", "lname":"Doe", "age":28}];
+  
+    //for loop:
+      for (var i=0; i<person.length; i++) {
+      console.log(person[i]);
+      }
+
+        //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
+    //for-in loop:
+      for (var i in person) {
+      console.log(person[i]);
+      }
+
+        //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
+    //for of loop:
+      for (const key of person) {
+      console.log(key);
+      }
+
+        //Output:   { fname: 'John', lname: 'Doe', age: 25 } { fname: 'Joseph', lname: 'Doe', age: 28 }
+
+    //forEach loop:
+      person.forEach(function(key) {
+      console.log(key.fname, key.lname);
+      });
+
+        //Output:   John Doe  Joseph Doe         
+
+
+
+
+
+
+
+2. Create your own resume data in JSON format
+    {
+      "basic": {
+        "name": "chinta pranavi",
+        "label": "Full Stack Developer",
+        "email": "chintapranavi @gmail.com",
+        "phone": "+91 7386000126",
+        "location": {
+          "address": "10-14-1799/1 seetharam nagar colony",
+          "postalCode": "503001",
+          "city": "Nizamabad",
+          "state": "Telangana",
+          "country": "India"
+        },
+        "profiles": [
+          {
+            "network": "Instagram",
+            "username": "_pranavi.gupta",
+            "url": "https://www.instagram.com/_pranavi.gupta/”
+          }
+        ]
+      },
+      "work": [
+        {
+          "name": "chinta pranavi",
+          "position": "Project engineer",
+          "Location": "hyderabad",
+          "url": "https://www.wipro.com/",
+          "startDate": "2021-08-23",
+          "summary": "Description…",
+          "highlights": [""]
+        }
+      ],
+      "education": [
+        {
+          "institution": "bhoj Reddy engineerning college",
+          "url": "http://www.brecw.ac.in/",
+          "area": “electronics and communication engineering",
+          "studyType": "Btech",
+          "startDate": "2017-07-10",
+          "endDate": "2021-07-25",
+          "score": "70%",
+          "courses": ["electronics and communication engineering"]
+        }
+      ],
+      "skills": [
+        {
+          "name": "Web Development",
+          "level": "Beginner",
+          "keywords": ["HTML", "CSS", "JavaScript,c,java,python,mysql"]
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "fluency": "Intermediate"
+        }
+      ],
+      "interests": [
+        {
+          "name1": "cooking",
+          "name2": "Reading Books"
+        }
+      ]}
+        
+
